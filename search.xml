@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>跨域请求解决-nginx服务器</title>
+      <link href="/2023/10/28/%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82%E8%A7%A3%E5%86%B3-nginx%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+      <url>/2023/10/28/%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82%E8%A7%A3%E5%86%B3-nginx%E6%9C%8D%E5%8A%A1%E5%99%A8/</url>
+      
+        <content type="html"><![CDATA[<h1 id="跨域请求问题-nginx解决"><a href="#跨域请求问题-nginx解决" class="headerlink" title="跨域请求问题 - nginx解决"></a>跨域请求问题 - nginx解决</h1><ul><li>想象一个场景， 我在用vue3 vite 写前端（或者已经打包后的文件）， 同时后端用springboot ， 我写完一个功能想要调试， 但是遇到了下面这个问题</li></ul><p><img src="https://cdn.jsdelivr.net/gh/Alanyaeer/web-component@master/assets/202310282236940.png" alt="image-20231028223647903"></p><p>这就是跨域请求的会出现的问题。</p><h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><ul><li><p>我在网上看到了很多， 在前端配置一些文件， 在后端加上注解或添加一些配置类文件， 但是恰巧我的程序使用了上面种种方法都无法成功， 在舍友的提醒下， 我开始使用nginx</p></li><li><p>打开nginx 文件夹 打开conf</p></li></ul><p><img src="https://cdn.jsdelivr.net/gh/Alanyaeer/web-component@master/assets/202310282239386.png" alt="image-20231028223957355"></p><ul><li>使用 vscode 打开 这个nginx.conf(最好不要使用文本编辑器)</li></ul><p><img src="https://cdn.jsdelivr.net/gh/Alanyaeer/web-component@master/assets/202310282240185.png" alt="image-20231028224030156"></p><ul><li>加上 这段代码</li></ul><p><img src="https://cdn.jsdelivr.net/gh/Alanyaeer/web-component@master/assets/202310282241195.png" alt="image-20231028224109169"></p><p>我解释一下它的作用， 首先 nginx 有一个监听的端口， 这里就是180，（<strong>所以我们后续调试打开的地址就是180）</strong></p><p>然后 location &#x2F;api 就是你的路径以 api 开头的网址， 被转发到 </p><p><img src="https://cdn.jsdelivr.net/gh/Alanyaeer/web-component@master/assets/202310282242519.png" alt="image-20231028224242497"></p><p>同理 &#x2F;friend 就被转发到 </p><p><img src="https://cdn.jsdelivr.net/gh/Alanyaeer/web-component@master/assets/202310282243562.png" alt="image-20231028224303540"></p><p>其余的都被转发到 5173 端口。 </p><blockquote><p>在这里 8080 端口是你后端程序的端口， 而5173可以换成你前端程序的端口</p></blockquote><p>而 &#x2F;api 和 &#x2F; friend 就是 我的前端的请求接口 一个是以api 开头一个是 friend开头 。</p><p>哦 对了， 我们还需要将前端的请求地址换成180端口</p><p><img src="https://cdn.jsdelivr.net/gh/Alanyaeer/web-component@master/assets/202310282246671.png" alt="image-20231028224611652"></p><p> 这里根据你的nginx 监听的端口而定</p><p>然后打开localhost:180， 发现启动成功</p><p><img src="https://cdn.jsdelivr.net/gh/Alanyaeer/web-component@master/assets/202310282247683.png" alt="image-20231028224751393"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 疑难解惑 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>java实现文件上传和文件下载</title>
       <link href="/2023/10/28/java%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%92%8C%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD/"/>
       <url>/2023/10/28/java%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%92%8C%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD/</url>
