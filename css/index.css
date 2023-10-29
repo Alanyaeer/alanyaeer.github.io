@@ -3467,13 +3467,6 @@ h1.page-title + .tag-cloud-list {
 #post-comment.move .comment-wrap > div:last-child {
   display: block;
 }
-#footer {
-  position: relative;
-  background-color: #49b1f5;
-  background-attachment: scroll;
-  background-position: bottom;
-  background-size: cover;
-}
 #footer-wrap {
   position: relative;
   padding: 40px 20px;
@@ -3507,13 +3500,6 @@ h1.page-title + .tag-cloud-list {
   -o-transition: all 0.5s;
   -ms-transition: all 0.5s;
   transition: all 0.5s;
-}
-#page-header:not(.not-top-img):before {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: var(--mark-bg);
-  content: '';
 }
 #page-header.full_page {
   height: 100vh;

@@ -154,11 +154,217 @@
   display: flex;
   flex-wrap: nowrap;
 }
+#recent-posts{
+	margin-top:-1rem;  /*头部抵消间隔*/
+	align-content:flex-start;
+	display: flex;
+    flex-wrap: wrap; /*规定灵活的项目在必要的时候拆行或拆列。*/
+    justify-content: space-between; /*。*/
+}
+#recent-posts > .recent-post-item {
+  /*max-height:324px;*/  /*文章容器最大高度*/
+  margin-top: 1rem; /*最小间距*/
+  display: inline-block;
+  height:auto; /*高度自动*/
+  width:49%;/*文章容器容器宽度*/
+}
+#post_cover{
+  background-image: 'https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202310291935375.jpg';
+}
+#recent-posts > .recent-post-item .post_cover {
+  width: 100%; /*图片封面宽度*/
+    height: 200px;/*图片封面高度*/
+}
+#recent-posts > .recent-post-item .post_cover img.post_bg {
+  width: 100%;/*图片宽度*/
+  height: 100%;/*图片高度*/
+}
 
+
+#recent-posts > .recent-post-item >.recent-post-info > .content {
+display:none;/*隐藏文章详情*/
+}
+#recent-posts > .recent-post-item {
+
+  -webkit-flex-direction: column; /*容器内部纵向排列*/
+  -ms-flex-direction: column; /*容器内部纵向排列*/
+  flex-direction: column; /*容器内部纵向排列*/
+
+}
+#recent-posts > .recent-post-item .left_radius {
+    border-radius: 8px 8px 0 0;/*圆角修改*/
+}
+#recent-posts > .recent-post-item .right_radius {
+    border-radius: 8px 8px 0 0;/*圆角修改*/
+}
+.recent-post-item{
+	height:auto !important;/*容器高度自动*/
+}
+
+.recent-post-info {
+  
+  padding: 0 40px;/*容器内部文字左右间距*/
+  margin-top: 1em;/*容器内部文字上间距*/
+  width: 100%!important;/*容器宽度*/
+}
+#recent-posts > .recent-post-item > .recent-post-info > .article-title {
+    -webkit-line-clamp: 1;/*控制标题的行数*/
+    margin-top: 0.3rem; /*控制标题的上间距*/
+	margin-bottom: 0.3rem;/*控制标题的下间距*/
+    color: var(--text-highlight-color);
+    font-size: 1.2em; /*控制标题的字体大小*/
+    line-height: 1.4;/*控制标题的行高*/
+ 
+}
+#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap {
+	margin-bottom: 1rem;/*控制标题meta信息的底部间距*/
+}
+@media screen and (max-width: 768px) {
+#recent-posts > .recent-post-item {
+ width:100%;/*控制手机自适应*/
+}
+}
+#pagination {
+  width: 100%;
+  margin: auto;
+}
 @font-face{
   font-family: 'YSHST';
   src: url(../font/YSHaoShenTi-2.ttf);
   font-weight: normal;
   font-style: normal;
   font-display: block;
+}
+
+/* 一级菜单居中 */
+#nav .menus_items {
+  position: absolute !important;
+  width: fit-content !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+/* 子菜单横向展示 */
+#nav .menus_items .menus_item:hover .menus_item_child {
+  display: flex !important;
+}
+/* 这里的2是代表导航栏的第2个元素，即有子菜单的元素，可以按自己需求修改 */
+.menus_items .menus_item:nth-child(2) .menus_item_child {
+  left: -125px;
+}
+/* 日间模式不生效 */
+[data-theme="light"] #site-name,
+[data-theme="light"] #site-title,
+[data-theme="light"] #site-subtitle,
+[data-theme="light"] #post-info {
+  animation: none;
+}
+/* 夜间模式生效 */
+[data-theme="dark"] #site-name,
+[data-theme="dark"] #site-title {
+  animation: light_15px 10s linear infinite;
+}
+[data-theme="dark"] #site-subtitle {
+  animation: light_10px 10s linear infinite;
+}
+[data-theme="dark"] #post-info {
+  animation: light_5px 10s linear infinite;
+}
+/* 关键帧描述 */
+@keyframes light_15px {
+  0% {
+    text-shadow: #5636ed 0 0 15px;
+  }
+  12.5% {
+    text-shadow: #11ee5e 0 0 15px;
+  }
+  25% {
+    text-shadow: #f14747 0 0 15px;
+  }
+  37.5% {
+    text-shadow: #f1a247 0 0 15px;
+  }
+  50% {
+    text-shadow: #f1ee47 0 0 15px;
+  }
+  50% {
+    text-shadow: #b347f1 0 0 15px;
+  }
+  62.5% {
+    text-shadow: #002afa 0 0 15px;
+  }
+  75% {
+    text-shadow: #ed709b 0 0 15px;
+  }
+  87.5% {
+    text-shadow: #39c5bb 0 0 15px;
+  }
+  100% {
+    text-shadow: #5636ed 0 0 15px;
+  }
+}
+
+@keyframes light_10px {
+  0% {
+    text-shadow: #5636ed 0 0 10px;
+  }
+  12.5% {
+    text-shadow: #11ee5e 0 0 10px;
+  }
+  25% {
+    text-shadow: #f14747 0 0 10px;
+  }
+  37.5% {
+    text-shadow: #f1a247 0 0 10px;
+  }
+  50% {
+    text-shadow: #f1ee47 0 0 10px;
+  }
+  50% {
+    text-shadow: #b347f1 0 0 10px;
+  }
+  62.5% {
+    text-shadow: #002afa 0 0 10px;
+  }
+  75% {
+    text-shadow: #ed709b 0 0 10px;
+  }
+  87.5% {
+    text-shadow: #39c5bb 0 0 10px;
+  }
+  100% {
+    text-shadow: #5636ed 0 0 10px;
+  }
+}
+
+@keyframes light_5px {
+  0% {
+    text-shadow: #5636ed 0 0 5px;
+  }
+  12.5% {
+    text-shadow: #11ee5e 0 0 5px;
+  }
+  25% {
+    text-shadow: #f14747 0 0 5px;
+  }
+  37.5% {
+    text-shadow: #f1a247 0 0 15px;
+  }
+  50% {
+    text-shadow: #f1ee47 0 0 5px;
+  }
+  50% {
+    text-shadow: #b347f1 0 0 5px;
+  }
+  62.5% {
+    text-shadow: #002afa 0 0 5px;
+  }
+  75% {
+    text-shadow: #ed709b 0 0 5px;
+  }
+  87.5% {
+    text-shadow: #39c5bb 0 0 5px;
+  }
+  100% {
+    text-shadow: #5636ed 0 0 5px;
+  }
 }
