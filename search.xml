@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>远程mysql连接不上</title>
+      <link href="/2023/10/30/%E8%BF%9C%E7%A8%8Bmysql%E8%BF%9E%E6%8E%A5%E4%B8%8D%E4%B8%8A/"/>
+      <url>/2023/10/30/%E8%BF%9C%E7%A8%8Bmysql%E8%BF%9E%E6%8E%A5%E4%B8%8D%E4%B8%8A/</url>
+      
+        <content type="html"><![CDATA[<h1 id="用户权限已经是-，但是远程数据库依旧连接不上"><a href="#用户权限已经是-，但是远程数据库依旧连接不上" class="headerlink" title="用户权限已经是%，但是远程数据库依旧连接不上"></a>用户权限已经是%，但是远程数据库依旧连接不上</h1><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>最近趁着双11购买了腾讯云服务器，想着配置好环境，早点用上。</p><p>然后启动我的数据库 开始 狠狠的连接（误）， 结果都是timeout ？ ， 什么我明明已经设置了用户权限是%啊！ </p><p><img src="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202310301954484.png" alt="image-20231030195447448"></p><h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>后来思来想去， 突然想要去看看端口是不是3306， 然后想要中午打开腾讯云的时候，看到了端口？ 我才猛地意识到我的3306端口没有开启 </p><blockquote><p> 不过这个已经是开启后的了</p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202310301951278.png" alt="image-20231030195131182"></p><h3 id="开启端口方式"><a href="#开启端口方式" class="headerlink" title="开启端口方式"></a>开启端口方式</h3><ul><li>点击 添加规则</li></ul><p><img src="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202310301952077.png" alt="image-20231030195223035"></p><p>跳出来这个页面， 然后将应用类型的下拉框选择mysql ，就好了</p><p><img src="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202310301952193.png" alt="image-20231030195259158"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前后端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> mysql, 云服务器 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>跨域请求解决-nginx服务器</title>
       <link href="/2023/10/28/%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82%E8%A7%A3%E5%86%B3-nginx%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
       <url>/2023/10/28/%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82%E8%A7%A3%E5%86%B3-nginx%E6%9C%8D%E5%8A%A1%E5%99%A8/</url>
