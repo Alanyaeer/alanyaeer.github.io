@@ -531,6 +531,7 @@ h6::before {
 }
 
 .loading-img {
-  background: url(https://npm.elemecdn.com/anzhiyu-blog@2.1.1/img/avatar.webp) no-repeat center center;
+  background: url(https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202310301954484.png) no-repeat center center;
   background-size: cover;
 }
+/* 波浪css */
