@@ -4,6 +4,62 @@
   
     
     <entry>
+      <title>Netty</title>
+      <link href="/2023/10/31/Netty/"/>
+      <url>/2023/10/31/Netty/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Netty"><a href="#Netty" class="headerlink" title="Netty"></a>Netty</h1><blockquote><p>牢记四个点</p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202310312044227.png" alt="image-20231031204440182"></p><h2 id="NIO基础"><a href="#NIO基础" class="headerlink" title="NIO基础"></a>NIO基础</h2><blockquote><p>非阻塞io - non-blocking io</p></blockquote><h3 id="三大组件"><a href="#三大组件" class="headerlink" title="三大组件"></a>三大组件</h3><ol><li><p>Channel &amp; Buffer</p><p>最常用的 Buffer： ByteBuffer</p><p>其他的不是很清楚</p></li><li><p>Selector</p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+            <tag> Netty </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Java_Juc</title>
+      <link href="/2023/10/31/Java-Juc/"/>
+      <url>/2023/10/31/Java-Juc/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Java-Juc"><a href="#Java-Juc" class="headerlink" title="Java-Juc"></a>Java-Juc</h1><p>。。。 学完netty在来看这个吧！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+            <tag> 多线程 </tag>
+            
+            <tag> 学习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>远程mysql连接不上</title>
       <link href="/2023/10/30/%E8%BF%9C%E7%A8%8Bmysql%E8%BF%9E%E6%8E%A5%E4%B8%8D%E4%B8%8A/"/>
       <url>/2023/10/30/%E8%BF%9C%E7%A8%8Bmysql%E8%BF%9E%E6%8E%A5%E4%B8%8D%E4%B8%8A/</url>
