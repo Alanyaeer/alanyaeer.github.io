@@ -118,7 +118,6 @@ document.addEventListener('DOMContentLoaded', function () {
       copy(text, ele.lastChild)
       selection.removeAllRanges()
       $buttonParent.classList.remove('copy-true')
-      debounce(function () {
         new Vue({
           data: function () {
               this.$notify({
@@ -132,7 +131,6 @@ document.addEventListener('DOMContentLoaded', function () {
               });
           }
       })
-      }, 300);
     }
 
     const highlightShrinkFn = ele => {
