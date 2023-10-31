@@ -82,9 +82,13 @@
   margin: auto;
 }
 /*文章页面*/
-.layout>#post {
-  background: rgba(114, 120, 130, 0.8);
+[data-theme="light"].layout>#post {
+  background: rgba(250, 250, 250, 0.8);
 }
+[data-theme="dark"].layout>#post {
+  background: rgba(0, 0, 0, 0.8);
+}
+
 
 /*分类页面*/
 .layout>#page {
