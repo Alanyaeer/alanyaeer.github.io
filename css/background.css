@@ -1,4 +1,4 @@
-@import "//at.alicdn.com/t/font_2264842_b004iy0kk2b.css";
+@import "//at.alicdn.com/t/c/font_4310562_upfi60u88s.css";
 #web_bg {
   background-image: url("../img/background.png"),
   linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35))
@@ -677,4 +677,3 @@ svg.icon {
   fill: currentColor;
   overflow: hidden;
 }
-
