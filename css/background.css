@@ -185,7 +185,8 @@
 }
 /* 导航栏 */
 #page-header.nav-fixed #nav {
-  background: rgba(255, 255, 255, 0.75);
+  /* background: rgba(255, 255, 255, 0.75); */
+  background-image: linear-gradient(to left, #F1D2E1,#BFEAFA);
   backdrop-filter: var(--backdrop-filter);
 }
 /* 夜间模式遮罩 */
@@ -669,3 +670,11 @@ h6::before {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+svg.icon {
+  width: 1.28em;
+  height: 1.28em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
