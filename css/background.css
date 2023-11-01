@@ -1,6 +1,11 @@
 @import "//at.alicdn.com/t/c/font_4310562_upfi60u88s.css";
-#web_bg {
+[data-theme="light"] #web_bg {
   background-image: url("../img/background.png"),
+  linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35))
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+[data-theme="dark"] #web_bg {
+  background-image: url("../img/background1.png"),
   linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35))
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
@@ -619,7 +624,7 @@ h6::before {
 
 /* 个人信息卡片背景图 */
 [data-theme="light"] #aside-content > .card-widget.card-info {
-  /* background-image: url(https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311012006374.png); */
+  background-image: url(https://sourcebucket.s3.ladydaily.com/img/snowflower.webp);
   background-repeat: no-repeat;
   background-attachment: inherit;
   background-size: 100%;
