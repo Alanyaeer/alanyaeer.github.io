@@ -1,13 +1,13 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>linux | Hao的空间🥝</title><meta name="author" content="耶格尔"><meta name="copyright" content="耶格尔"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="[toc] 如何用共享文件x点击虚拟机， 然后选择点击设置， 选项共享文件夹找到D:\myshare,然后就可以了  在虚拟机中cd /mnt/hgfs/share 注意如果你没有开启共享文件功能，那么你在虚拟机中找不到这个hgfs文件  shell 突然连接上不上虚拟机的问题和解决方法 重启ssh服务   systemctl restart sshd  查看你当前虚拟机的ip地址   昨天ine">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>linux | Hao的空间🥝</title><meta name="author" content="耶格尔"><meta name="copyright" content="耶格尔"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="我的linux学习记录">
 <meta property="og:type" content="article">
 <meta property="og:title" content="linux">
 <meta property="og:url" content="http://alanyaeer.fun/2023/11/06/linux/index.html">
 <meta property="og:site_name" content="Hao的空间🥝">
-<meta property="og:description" content="[toc] 如何用共享文件x点击虚拟机， 然后选择点击设置， 选项共享文件夹找到D:\myshare,然后就可以了  在虚拟机中cd /mnt/hgfs/share 注意如果你没有开启共享文件功能，那么你在虚拟机中找不到这个hgfs文件  shell 突然连接上不上虚拟机的问题和解决方法 重启ssh服务   systemctl restart sshd  查看你当前虚拟机的ip地址   昨天ine">
+<meta property="og:description" content="我的linux学习记录">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311061815057.png">
 <meta property="article:published_time" content="2023-11-06T10:13:05.000Z">
-<meta property="article:modified_time" content="2023-11-06T10:17:03.403Z">
+<meta property="article:modified_time" content="2023-11-06T10:18:28.753Z">
 <meta property="article:author" content="耶格尔">
 <meta property="article:tag" content="学习">
 <meta property="article:tag" content="linux">
@@ -57,7 +57,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2023-11-06 18:17:03'
+  postUpdate: '2023-11-06 18:18:28'
 }</script><script>(win=>{
       win.saveToLocal = {
         set: (key, value, ttl) => {
@@ -177,7 +177,7 @@ if (false) {
 document.addEventListener('pjax:send', () => {
   Pace.restart()
 })
-</script><link rel="stylesheet" href="/css/progress_bar.css"><script src="https://cdn.jsdelivr.net/npm/pace-js/pace.min.js"></script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/loading.gif" data-original="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">13</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><hr class="custom-hr"><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/"><i class="fa-fw icon-home"></i><svg class="icon fas fa-home" aria-hidden="true"><use xlink:href="#icon-home"></use></svg><span> 首页</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/archives/"><i class="fa-fw icon-guidang"></i><svg class="icon fas fa-archive" aria-hidden="true"><use xlink:href="#icon-guidang"></use></svg><span> 归档</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/tags/"><i class="fa-fw icon-sekuaibiaoqian"></i><svg class="icon fas fa-tags" aria-hidden="true"><use xlink:href="#icon-sekuaibiaoqian"></use></svg><span> 标签</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/categories/"><i class="fa-fw icon-fenlei"></i><svg class="icon fas fa-folder-open" aria-hidden="true"><use xlink:href="#icon-fenlei"></use></svg><span> 分类</span></a></div><div class="menus_item"><a class="site-page group faa-parent animated-hover" href="javascript:void(0);"><svg class="icon hide" aria-hidden="true"><use xlink:href="#icon-liebiao1"></use></svg><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/"><svg class="icon fas fa-music" aria-hidden="true"><use xlink:href="#icon-yinle">                   </use></svg><span> 音乐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/movies/"><svg class="icon fas fa-video" aria-hidden="true"><use xlink:href="#icon-dianying">                   </use></svg><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/comments/"><i class="fa-fw icon-a-027_kecheng"></i><svg class="icon fas fa-envelope-open" aria-hidden="true"><use xlink:href="#icon-a-027_kecheng"></use></svg><span> 留言板</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/link/"><i class="fa-fw icon-lianjie"></i><svg class="icon fas fa-link" aria-hidden="true"><use xlink:href="#icon-lianjie"></use></svg><span> 友链</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/about/"><i class="fa-fw icon-a-027_huodong"></i><svg class="icon fas fa-heart" aria-hidden="true"><use xlink:href="#icon-a-027_huodong"></use></svg><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311061815057.png')"><nav id="nav"><span id="blog-info"><a href="/" title="Hao的空间🥝"><span class="site-name">Hao的空间🥝</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/"><i class="fa-fw icon-home"></i><svg class="icon fas fa-home" aria-hidden="true"><use xlink:href="#icon-home"></use></svg><span> 首页</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/archives/"><i class="fa-fw icon-guidang"></i><svg class="icon fas fa-archive" aria-hidden="true"><use xlink:href="#icon-guidang"></use></svg><span> 归档</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/tags/"><i class="fa-fw icon-sekuaibiaoqian"></i><svg class="icon fas fa-tags" aria-hidden="true"><use xlink:href="#icon-sekuaibiaoqian"></use></svg><span> 标签</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/categories/"><i class="fa-fw icon-fenlei"></i><svg class="icon fas fa-folder-open" aria-hidden="true"><use xlink:href="#icon-fenlei"></use></svg><span> 分类</span></a></div><div class="menus_item"><a class="site-page group faa-parent animated-hover" href="javascript:void(0);"><svg class="icon hide" aria-hidden="true"><use xlink:href="#icon-liebiao1"></use></svg><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/"><svg class="icon fas fa-music" aria-hidden="true"><use xlink:href="#icon-yinle">                   </use></svg><span> 音乐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/movies/"><svg class="icon fas fa-video" aria-hidden="true"><use xlink:href="#icon-dianying">                   </use></svg><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/comments/"><i class="fa-fw icon-a-027_kecheng"></i><svg class="icon fas fa-envelope-open" aria-hidden="true"><use xlink:href="#icon-a-027_kecheng"></use></svg><span> 留言板</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/link/"><i class="fa-fw icon-lianjie"></i><svg class="icon fas fa-link" aria-hidden="true"><use xlink:href="#icon-lianjie"></use></svg><span> 友链</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/about/"><i class="fa-fw icon-a-027_huodong"></i><svg class="icon fas fa-heart" aria-hidden="true"><use xlink:href="#icon-a-027_huodong"></use></svg><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">linux</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-11-06T10:13:05.000Z" title="发表于 2023-11-06 18:13:05">2023-11-06</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-11-06T10:17:03.403Z" title="更新于 2023-11-06 18:17:03">2023-11-06</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">7.9k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>27分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="linux"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section></header><main class="layout" id="content-inner"><div id="post"><div class="top-img" style="background-image: url('https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311061815057.png');"></div><article class="post-content" id="article-container"><p>[toc]</p>
+</script><link rel="stylesheet" href="/css/progress_bar.css"><script src="https://cdn.jsdelivr.net/npm/pace-js/pace.min.js"></script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/loading.gif" data-original="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">13</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><hr class="custom-hr"><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/"><i class="fa-fw icon-home"></i><svg class="icon fas fa-home" aria-hidden="true"><use xlink:href="#icon-home"></use></svg><span> 首页</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/archives/"><i class="fa-fw icon-guidang"></i><svg class="icon fas fa-archive" aria-hidden="true"><use xlink:href="#icon-guidang"></use></svg><span> 归档</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/tags/"><i class="fa-fw icon-sekuaibiaoqian"></i><svg class="icon fas fa-tags" aria-hidden="true"><use xlink:href="#icon-sekuaibiaoqian"></use></svg><span> 标签</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/categories/"><i class="fa-fw icon-fenlei"></i><svg class="icon fas fa-folder-open" aria-hidden="true"><use xlink:href="#icon-fenlei"></use></svg><span> 分类</span></a></div><div class="menus_item"><a class="site-page group faa-parent animated-hover" href="javascript:void(0);"><svg class="icon hide" aria-hidden="true"><use xlink:href="#icon-liebiao1"></use></svg><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/"><svg class="icon fas fa-music" aria-hidden="true"><use xlink:href="#icon-yinle">                   </use></svg><span> 音乐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/movies/"><svg class="icon fas fa-video" aria-hidden="true"><use xlink:href="#icon-dianying">                   </use></svg><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/comments/"><i class="fa-fw icon-a-027_kecheng"></i><svg class="icon fas fa-envelope-open" aria-hidden="true"><use xlink:href="#icon-a-027_kecheng"></use></svg><span> 留言板</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/link/"><i class="fa-fw icon-lianjie"></i><svg class="icon fas fa-link" aria-hidden="true"><use xlink:href="#icon-lianjie"></use></svg><span> 友链</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/about/"><i class="fa-fw icon-a-027_huodong"></i><svg class="icon fas fa-heart" aria-hidden="true"><use xlink:href="#icon-a-027_huodong"></use></svg><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311061815057.png')"><nav id="nav"><span id="blog-info"><a href="/" title="Hao的空间🥝"><span class="site-name">Hao的空间🥝</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/"><i class="fa-fw icon-home"></i><svg class="icon fas fa-home" aria-hidden="true"><use xlink:href="#icon-home"></use></svg><span> 首页</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/archives/"><i class="fa-fw icon-guidang"></i><svg class="icon fas fa-archive" aria-hidden="true"><use xlink:href="#icon-guidang"></use></svg><span> 归档</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/tags/"><i class="fa-fw icon-sekuaibiaoqian"></i><svg class="icon fas fa-tags" aria-hidden="true"><use xlink:href="#icon-sekuaibiaoqian"></use></svg><span> 标签</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/categories/"><i class="fa-fw icon-fenlei"></i><svg class="icon fas fa-folder-open" aria-hidden="true"><use xlink:href="#icon-fenlei"></use></svg><span> 分类</span></a></div><div class="menus_item"><a class="site-page group faa-parent animated-hover" href="javascript:void(0);"><svg class="icon hide" aria-hidden="true"><use xlink:href="#icon-liebiao1"></use></svg><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/"><svg class="icon fas fa-music" aria-hidden="true"><use xlink:href="#icon-yinle">                   </use></svg><span> 音乐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/movies/"><svg class="icon fas fa-video" aria-hidden="true"><use xlink:href="#icon-dianying">                   </use></svg><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/comments/"><i class="fa-fw icon-a-027_kecheng"></i><svg class="icon fas fa-envelope-open" aria-hidden="true"><use xlink:href="#icon-a-027_kecheng"></use></svg><span> 留言板</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/link/"><i class="fa-fw icon-lianjie"></i><svg class="icon fas fa-link" aria-hidden="true"><use xlink:href="#icon-lianjie"></use></svg><span> 友链</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/about/"><i class="fa-fw icon-a-027_huodong"></i><svg class="icon fas fa-heart" aria-hidden="true"><use xlink:href="#icon-a-027_huodong"></use></svg><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">linux</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-11-06T10:13:05.000Z" title="发表于 2023-11-06 18:13:05">2023-11-06</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-11-06T10:18:28.753Z" title="更新于 2023-11-06 18:18:28">2023-11-06</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">7.9k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>27分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="linux"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section></header><main class="layout" id="content-inner"><div id="post"><div class="top-img" style="background-image: url('https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311061815057.png');"></div><article class="post-content" id="article-container"><p>[toc]</p>
 <h1 id="如何用共享文件"><a href="#如何用共享文件" class="headerlink" title="如何用共享文件"></a>如何用共享文件</h1><h2 id="x"><a href="#x" class="headerlink" title="x"></a>x<img src="/img/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311061816706.png" alt="image-20230516172648393"></h2><p>点击虚拟机， 然后选择点击设置， 选项共享文件夹找到<code>D:\myshare</code>,然后就可以了</p>
 <ul>
 <li>在虚拟机中<code>cd /mnt/hgfs/share</code></li>
@@ -186,7 +186,7 @@ document.addEventListener('pjax:send', () => {
 <h2 id="shell-突然连接上不上虚拟机的问题和解决方法"><a href="#shell-突然连接上不上虚拟机的问题和解决方法" class="headerlink" title="shell 突然连接上不上虚拟机的问题和解决方法"></a>shell 突然连接上不上虚拟机的问题和解决方法</h2><ol>
 <li>重启ssh服务</li>
 </ol>
-<p><code> systemctl restart sshd</code></p>
+<p><code>systemctl restart sshd</code></p>
 <ol start="2">
 <li>查看你当前虚拟机的ip地址</li>
 </ol>
@@ -222,13 +222,13 @@ document.addEventListener('pjax:send', () => {
 <h2 id="tips"><a href="#tips" class="headerlink" title="tips"></a>tips</h2><p>gd 可以跳转到定义 (ctrl + i 可以调回来)</p>
 <p>切换标签页 g + t （往前） g + T（往后）</p>
 <p>4 g t 跳转第二个标签页</p>
-<h2 id="easymotion"><a href="#easymotion" class="headerlink" title="easymotion"></a>easymotion</h2><p><code>&lt;leader&gt;&lt;leader&gt; s </code> leader 代表键盘</p>
+<h2 id="easymotion"><a href="#easymotion" class="headerlink" title="easymotion"></a>easymotion</h2><p><code>&lt;leader&gt;&lt;leader&gt; s</code> leader 代表键盘</p>
 <p><img src="/img/loading.gif" data-original="C:\Users\wps\AppData\Roaming\Typora\typora-user-images\image-20230401194215189.png" alt="image-20230401194215189"></p>
 <h2 id="vim-surround"><a href="#vim-surround" class="headerlink" title="vim_surround"></a>vim_surround</h2><p><img src="/img/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311061816782.png" alt="image-20230401194513127"></p>
 <p>当你使用 cs “ [ 则去掉”,然后 [ 之间没有空格,] 之间有空格</p>
 <p>替换标签可以使用 cs”t p&gt; 就可以得到 一个标签</p>
 <ul>
-<li>退回到命令行模式，然后输入<code>:wq </code>可以强制退出</li>
+<li>退回到命令行模式，然后输入<code>:wq</code>可以强制退出</li>
 </ul>
 <h1 id="linux"><a href="#linux" class="headerlink" title="linux"></a>linux</h1><p>centos和vm虚拟机软件的安装看<a href="%5B007_%E9%9F%A9%E9%A1%BA%E5%B9%B3Linux_%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5%E4%B8%89%E7%A7%8D%E6%96%B9%E5%BC%8F_%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9_bilibili%5D(https://www.bilibili.com/video/BV1Sv411r7vd?p=7&amp;vd_source=a96a6a5c5954878773b7ac38c6a5f71b)">韩顺平</a></p>
 <h2 id="1-网络连接的三种方式"><a href="#1-网络连接的三种方式" class="headerlink" title="1.网络连接的三种方式"></a>1.网络连接的三种方式</h2><p>如果两个网络都在一个 192.168为开头的，那么他们都在同一个<strong>网段</strong> 在一个网段下的用户，可以相互链接</p>
@@ -252,13 +252,13 @@ document.addEventListener('pjax:send', () => {
 <p><img src="/img/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311061816119.png" alt="image-20221124161923011"></p>
 <p><img src="/img/loading.gif" data-original="C:\Users\wps\AppData\Roaming\Typora\typora-user-images\image-20221124162020657.png" alt="image-20221124162020657"></p>
 <blockquote>
-<p> 如果你现在在C，记录了A和B的快照，那么我们就可以通过快照机制回到A，<strong>在回到A之后，我们也可以回到B</strong></p>
+<p>如果你现在在C，记录了A和B的快照，那么我们就可以通过快照机制回到A，<strong>在回到A之后，我们也可以回到B</strong></p>
 </blockquote>
 <h3 id="2-3删除（直接手动删除就好了）"><a href="#2-3删除（直接手动删除就好了）" class="headerlink" title="2. 3删除（直接手动删除就好了）"></a>2. 3删除（直接手动删除就好了）</h3><h3 id="2-4安装vmtools"><a href="#2-4安装vmtools" class="headerlink" title="2.4安装vmtools"></a>2.4安装vmtools</h3><p><img src="/img/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311061816628.png" alt="image-20221124163106274"></p>
 <p><img src="/img/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311061816071.png" alt="image-20221124205734386"></p>
 <h2 id="3-目录结构-grin"><a href="#3-目录结构-grin" class="headerlink" title="3.目录结构:grin:"></a>3.目录结构:grin:</h2><p><img src="/img/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311061816088.png" alt="image-20221124205900134"></p>
 <blockquote>
-<p> 在linux的世界中，一切皆文件</p>
+<p>在linux的世界中，一切皆文件</p>
 </blockquote>
 <ul>
 <li>/bin 存放着最常用的指令</li>
@@ -292,7 +292,7 @@ document.addEventListener('pjax:send', () => {
 <li>yy: 拷贝当前行 <code>4yy</code>复制4行</li>
 <li>dd: 删除当前行 <code>4dd</code>删除当前行</li>
 <li>/关键字 ，回车查找，输入n就是查找下一个，输入N就是查找下一个</li>
-<li><code>:set nu </code> ：显示行号,<code>:set  nonu</code>：不显示行号</li>
+<li><code>:set nu</code> ：显示行号,<code>:set  nonu</code>：不显示行号</li>
 <li><code>gg</code>：快捷键到文档的最开始一行 <code>G</code>：快捷键到文档的最后一行</li>
 <li><code>u</code>撤销，如windows的<code>ctrl+z</code></li>
 <li><code>数字+shift+g</code>定位到数字对应的行</li>
@@ -373,14 +373,12 @@ document.addEventListener('pjax:send', () => {
 <p><img src="/img/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311061816138.png" alt="image-20221127084923967"></p>
 <ul>
 <li>输入<code>init n</code>跳入对应的状态</li>
-<li><code>systemctl set-default graphical.target </code>,回到默认的状态</li>
+<li><code>systemctl set-default graphical.target</code>,回到默认的状态</li>
 <li><code>systemctl set-default TARGET.target</code>设置回到的状态</li>
 </ul>
 <p><img src="/img/loading.gif" data-original="C:\Users\wps\AppData\Roaming\Typora\typora-user-images\image-20230509090244160.png" alt="image-20230509090244160"></p>
 <p><strong>修改初始init的方法</strong>。</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">systemctl get-default </span><br><span class="line">查看当前系统的默认级别</span><br><span class="line"></span><br><span class="line">systemctl set-default multi-user.target</span><br><span class="line">切换成多用户网络级别</span><br><span class="line"></span><br><span class="line">systemctl set-default graphical.target</span><br><span class="line">切换成图形界面级别级别</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
-
-
 
 <h3 id="如何找回root密码"><a href="#如何找回root密码" class="headerlink" title="如何找回root密码"></a>如何找回root密码</h3><ol>
 <li><p>首先，启动系统，进入开机界面，在界面中摁’e’进入编辑界面</p>
@@ -570,10 +568,10 @@ document.addEventListener('pjax:send', () => {
 <p><code>date +%d</code></p>
 <p><code>date "+%Y- %m- %d %H:%M:%S"</code></p>
 <p><img src="/img/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311061816870.png" alt="image-20230512102419810"></p>
-<p><code>date -s 设计系统当前时间 </code></p>
+<p><code>date -s 设计系统当前时间</code></p>
 <p><img src="/img/loading.gif" data-original="C:\Users\wps\AppData\Roaming\Typora\typora-user-images\image-20230512102701478.png" alt="image-20230512102701478"></p>
 <p><code>cal</code> 查看日历指令</p>
-<h2 id="搜索查找类指令"><a href="#搜索查找类指令" class="headerlink" title="搜索查找类指令"></a>搜索查找类指令</h2><h3 id="find指令"><a href="#find指令" class="headerlink" title="find指令"></a>find指令</h3><p><img src="/img/loading.gif" data-original="C:\Users\wps\AppData\Roaming\Typora\typora-user-images\image-20230512102954151.png" alt="image-20230512102954151"> </p>
+<h2 id="搜索查找类指令"><a href="#搜索查找类指令" class="headerlink" title="搜索查找类指令"></a>搜索查找类指令</h2><h3 id="find指令"><a href="#find指令" class="headerlink" title="find指令"></a>find指令</h3><p><img src="/img/loading.gif" data-original="C:\Users\wps\AppData\Roaming\Typora\typora-user-images\image-20230512102954151.png" alt="image-20230512102954151"></p>
 <ol>
 <li><code>find /home -name hello.txt</code></li>
 </ol>
@@ -594,10 +592,9 @@ document.addEventListener('pjax:send', () => {
 <h3 id="locate-指令"><a href="#locate-指令" class="headerlink" title="locate  指令"></a>locate  指令</h3><p><code>快速定位文件的路径</code></p>
 <p><strong>它的查询速度非常快速，他是建立自己的数据库进行查找</strong></p>
 <ul>
-<li><p>在第一次运行之前， 需要使用<code>updatedb</code>指令创建<code>locate</code>数据库, 否则会检索不到</p>
-<h3 id="which-指令"><a href="#which-指令" class="headerlink" title="which 指令"></a>which 指令</h3></li>
+<li>在第一次运行之前， 需要使用<code>updatedb</code>指令创建<code>locate</code>数据库, 否则会检索不到</li>
 </ul>
-<p><strong>可以查看某一个指令在哪个目录存放 。</strong></p>
+<h3 id="which-指令"><a href="#which-指令" class="headerlink" title="which 指令"></a>which 指令</h3><p><strong>可以查看某一个指令在哪个目录存放 。</strong></p>
 <p><code>which ls</code></p>
 <p><img src="/img/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311061816676.png" alt="image-20230512104657145"></p>
 <h3 id="grep-指令和管道符号"><a href="#grep-指令和管道符号" class="headerlink" title="grep 指令和管道符号"></a>grep 指令和管道符号</h3><p><code>grep 过滤查找， 管道符， "|" 表示将前一个命令的处理结果输出传递给后面的命名处理</code></p>
@@ -620,8 +617,8 @@ document.addEventListener('pjax:send', () => {
 </ul>
 <p><img src="/img/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311061816278.png" alt="image-20230512110256282"></p>
 <ul>
-<li><code>zip -r myhome.zip /home/ </code>将home目录及其包</li>
-<li><code>unzip -d /opt/tmp/ home/myhome.zip </code> 解压myhome.zip刀tmp目录下</li>
+<li><code>zip -r myhome.zip /home/</code>将home目录及其包</li>
+<li><code>unzip -d /opt/tmp/ home/myhome.zip</code> 解压myhome.zip刀tmp目录下</li>
 </ul>
 <h3 id="tar指令"><a href="#tar指令" class="headerlink" title="tar指令"></a>tar指令</h3><ul>
 <li>zxvf <strong>解包文件</strong></li>
@@ -671,7 +668,7 @@ document.addEventListener('pjax:send', () => {
 <p>这行数据的含义如下</p>
 <p><img src="/img/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311061816537.png" alt="image-20230513105326509"></p>
 <p><strong>第一位</strong></p>
-<p>是<code>l</code>代表链接 </p>
+<p>是<code>l</code>代表链接</p>
 <p>是<code>d</code>代表目录,相当于windows的目录</p>
 <p>是<code>-</code>代表是普通文件</p>
 <p>是<code>c</code>代表是字符设备 比如鼠标键盘 <strong>cd /dev 就可以看到, 下面的也可以</strong>通过这个方式看到</p>
@@ -680,7 +677,7 @@ document.addEventListener('pjax:send', () => {
 <p><strong>第4-6位</strong>确定所属组拥有的对该文件的权限 –group</p>
 <p><strong>第7-9位</strong>确定其他用户组拥有该文件的权限 – Other</p>
 <p>如果对应权限没有,利用<code>-</code>来表示<strong>缺省</strong></p>
-<p><code>-    rwx    rw-    r--</code> </p>
+<p><code>-    rwx    rw-    r--</code></p>
 <p><strong>上面分隔开就可以表示权限</strong></p>
 <p>rwx (<strong>r代表可读 w代表可写 x代表可以执行</strong>)</p>
 <p>作用到文件和目录下面的区别</p>
@@ -693,7 +690,7 @@ document.addEventListener('pjax:send', () => {
 <li>要先切换到对应的用户名那边先。</li>
 </ul>
 <blockquote>
-<p> u:所有(拥有)者 g:所有组 o:其他人 a:所有人</p>
+<p>u:所有(拥有)者 g:所有组 o:其他人 a:所有人</p>
 </blockquote>
 <p><img src="/img/loading.gif" data-original="C:\Users\wps\AppData\Roaming\Typora\typora-user-images\image-20230513111852339.png" alt="image-20230513111852339"></p>
 <ul>
@@ -756,7 +753,7 @@ document.addEventListener('pjax:send', () => {
 
 <p><img src="/img/loading.gif" data-original="C:\Users\wps\AppData\Roaming\Typora\typora-user-images\image-20230514163107233.png" alt="image-20230514163107233"></p>
 <p><img src="/img/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311061816458.png" alt="image-20230514163052523"></p>
-<p><code>cd </code> 到<code>/tmp/</code>里面，发现生成了一个<code>to.txt</code> ， 如果暂时还没有生成， 我们可以等一伙</p>
+<p><code>cd</code> 到<code>/tmp/</code>里面，发现生成了一个<code>to.txt</code> ， 如果暂时还没有生成， 我们可以等一伙</p>
 <ul>
 <li>最后一个* 代表星期几</li>
 </ul>
@@ -783,7 +780,7 @@ document.addEventListener('pjax:send', () => {
 </li>
 <li><p><img src="/img/loading.gif" data-original="C:\Users\wps\AppData\Roaming\Typora\typora-user-images\image-20230514171200073.png" alt="image-20230514171200073"></p>
 </li>
-<li><p>拓展 ：ps -ef 检测当前的进程 </p>
+<li><p>拓展 ：ps -ef 检测当前的进程</p>
 <ul>
 <li>结合过滤语句可以查看是否存在atd<code>ps -ef | grep atd</code></li>
 </ul>
@@ -958,7 +955,7 @@ document.addEventListener('pjax:send', () => {
 <h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><ul>
 <li>要求以全格式查看所有进程， 已经进程的父进程</li>
 </ul>
-<p><code>ps -ef</code> </p>
+<p><code>ps -ef</code></p>
 <p><strong>-e显示所有进程 -f全格式</strong></p>
 <p>ppid <strong>代表父进程</strong>， 父进程为0 代表没有父进程</p>
 <p>sshd 父进程信息</p>
@@ -1002,7 +999,7 @@ document.addEventListener('pjax:send', () => {
 <li>etc/init.d还可以通过该指令查看</li>
 </ul>
 <p><img src="/img/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311061816171.png" alt="image-20230516160002842"></p>
-<p>停止掉网络服务之后， 就不能够在连接xshell </p>
+<p>停止掉网络服务之后， 就不能够在连接xshell</p>
 <p><code>service network stop</code>: 可以让xshell连接不到服务器</p>
 <p><code>service network restart</code>： xshell连接上</p>
 <h3 id="打开和关闭自启动"><a href="#打开和关闭自启动" class="headerlink" title="打开和关闭自启动"></a>打开和关闭自启动</h3><p><code>setup</code>打开这个管理界面</p>
@@ -1025,13 +1022,13 @@ document.addEventListener('pjax:send', () => {
 <li>输入chkconfig –level 3 network off 来关闭某个级别的网络服务</li>
 </ul>
 <p><img src="/img/loading.gif" data-original="C:\Users\wps\AppData\Roaming\Typora\typora-user-images\image-20230516171101595.png" alt="image-20230516171101595"></p>
-<p>敲击chkconfig –level 3 network on之后 </p>
+<p>敲击chkconfig –level 3 network on之后</p>
 <p><img src="/img/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311061816319.png" alt="image-20230516171233340"></p>
 <h2 id="systemctl指令（明天学）-后天（昨天游泳了）-swimmer"><a href="#systemctl指令（明天学）-后天（昨天游泳了）-swimmer" class="headerlink" title="systemctl指令（明天学）/ 后天（昨天游泳了）:swimmer:"></a>systemctl指令（明天学）/ 后天（昨天游泳了）:swimmer:</h2><ul>
 <li>基本指令</li>
 </ul>
 <p><img src="/img/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311061816440.png" alt="image-20230518154330934"></p>
-<p>​	它的指令管理的服务在<code>/usr/lib/systemd/system</code> 查看</p>
+<p>​ 它的指令管理的服务在<code>/usr/lib/systemd/system</code> 查看</p>
 <ul>
 <li>firewalld.service  <strong>防火墙的名称</strong></li>
 </ul>
@@ -1139,7 +1136,7 @@ document.addEventListener('pjax:send', () => {
 <p><code>rpm -al firefox</code></p>
 <p><img src="/img/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311061816351.png" alt="image-20230518165424630"></p>
 <ul>
-<li><p><strong>查询文件所属的包</strong> </p>
+<li><p><strong>查询文件所属的包</strong></p>
 <p>rpm -qf /etc/passwd</p>
 </li>
 </ul>
@@ -1151,7 +1148,7 @@ document.addEventListener('pjax:send', () => {
 <p> 强制删除 <strong>$rpm -e –nodeps foo</strong>  因为存在其他软件，需要依赖于这个安装包</p>
 <ul>
 <li><p>安装rpm包</p>
-<p>rpm -ivh RPM包全路径名称 </p>
+<p>rpm -ivh RPM包全路径名称</p>
 <p><img src="/img/loading.gif" data-original="C:\Users\wps\AppData\Roaming\Typora\typora-user-images\image-20230518170005403.png" alt="image-20230518170005403"></p>
 </li>
 </ul>
@@ -1237,10 +1234,7 @@ document.addEventListener('pjax:send', () => {
 <ul>
 <li>需要注意的是，这里的其他输入的是<code>*</code>， 而不是<code>“*”</code>.</li>
 </ul>
-<p>	</p>
 <figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">!/bin/bash</span></span><br><span class="line">case $1 in</span><br><span class="line">"1")</span><br><span class="line">echo "1"</span><br><span class="line">;;</span><br><span class="line">"2")</span><br><span class="line">echo "2"</span><br><span class="line">;;</span><br><span class="line">*)</span><br><span class="line">echo "5"</span><br><span class="line">;;</span><br><span class="line">esac</span><br></pre></td></tr></tbody></table></figure>
-
-
 
 <h2 id="for"><a href="#for" class="headerlink" title="for"></a>for</h2><p><img src="/img/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311061816403.png" alt="image-20230519184205657"></p>
 <h2 id="while"><a href="#while" class="headerlink" title="while"></a>while</h2><p><img src="/img/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311061816662.png" alt="image-20230519184121248"></p>
@@ -1336,8 +1330,6 @@ document.addEventListener('pjax:send', () => {
 <p>我自己写了一个文件为<code>wjh.log</code></p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">/var/log/wjh.log</span><br><span class="line">{</span><br><span class="line">        missingok</span><br><span class="line">        daily</span><br><span class="line">        copytruncate</span><br><span class="line">        rotate 7</span><br><span class="line">        notifempty</span><br><span class="line">}</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
 
-
-
 <h2 id="日志轮换机制"><a href="#日志轮换机制" class="headerlink" title="日志轮换机制"></a>日志轮换机制</h2><p><img src="/img/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311061816480.png" alt="image-20230521150100024"></p>
 <p><img src="/img/loading.gif" data-original="C:\Users\wps\AppData\Roaming\Typora\typora-user-images\image-20230521150212116.png" alt="image-20230521150212116"></p>
 <p>它会又一个crond 的后台程序， 然后回用logrotate 然后对<code>/etc/logrotate.d</code></p>
@@ -1393,7 +1385,7 @@ document.body.addEventListener('input', POWERMODE);
     if( document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
     butterfly_categories_card_injector_config()
     }
-  </script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script>
+  </script><!-- hexo injector body_end end -->
         <style>
             [bg-lazy] {
                 background-image: none !important;
@@ -1406,4 +1398,4 @@ document.body.addEventListener('input', POWERMODE);
                 preloadRatio: 1,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(r){r.imageLazyLoadSetting.processImages=t;var e=r.imageLazyLoadSetting.isSPA,n=r.imageLazyLoadSetting.preloadRatio||1,c=a();function a(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(){e&&(c=a());for(var t,o=0;o<c.length;o++)0<=(t=(t=c[o]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(r.innerHeight*n||document.documentElement.clientHeight*n)&&function(){var t,e,n,a,i=c[o];e=function(){c=c.filter(function(t){return i!==t}),r.imageLazyLoadSetting.onImageLoaded&&r.imageLazyLoadSetting.onImageLoaded(i)},(t=i).hasAttribute("bg-lazy")?(t.removeAttribute("bg-lazy"),e&&e()):(n=new Image,a=t.getAttribute("data-original"),n.onload=function(){t.src=a,t.removeAttribute("data-original"),e&&e()},t.src!==a&&(n.src=a))}()}function i(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",i),r.addEventListener("resize",i),r.addEventListener("orientationchange",i)}(this);</script></body></html>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(r){r.imageLazyLoadSetting.processImages=t;var e=r.imageLazyLoadSetting.isSPA,n=r.imageLazyLoadSetting.preloadRatio||1,c=a();function a(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(){e&&(c=a());for(var t,o=0;o<c.length;o++)0<=(t=(t=c[o]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(r.innerHeight*n||document.documentElement.clientHeight*n)&&function(){var t,e,n,a,i=c[o];e=function(){c=c.filter(function(t){return i!==t}),r.imageLazyLoadSetting.onImageLoaded&&r.imageLazyLoadSetting.onImageLoaded(i)},(t=i).hasAttribute("bg-lazy")?(t.removeAttribute("bg-lazy"),e&&e()):(n=new Image,a=t.getAttribute("data-original"),n.onload=function(){t.src=a,t.removeAttribute("data-original"),e&&e()},t.src!==a&&(n.src=a))}()}function i(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",i),r.addEventListener("resize",i),r.addEventListener("orientationchange",i)}(this);</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>
