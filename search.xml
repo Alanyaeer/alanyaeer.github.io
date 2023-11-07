@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>linux-ftp设置</title>
+      <link href="/2023/11/07/linux-ftp%E8%AE%BE%E7%BD%AE/"/>
+      <url>/2023/11/07/linux-ftp%E8%AE%BE%E7%BD%AE/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>在阅读文本之前，请确保已经配置过 <a href="https://cloud.tencent.com/document/product/213/10912">云服务器 Linux 云服务器搭建 FTP 服务-最佳实践-文档中心-腾讯云 (tencent.com)</a> 这些</p></blockquote><h1 id="root-用户登录ftp"><a href="#root-用户登录ftp" class="headerlink" title="root 用户登录ftp"></a>root 用户登录ftp</h1><blockquote><p>在操作完腾讯云给出的ftp服务教程之后，我想着可不可以直接用root 用户登录， 结果发现出现了这个问题</p></blockquote><blockquote><p>530 Please login with USER and PASS. Error EElFTPSUnacceptedReplyError: Unaccepted server reply code 530 to command PWD</p></blockquote><ul><li>大概是因为root用户不被允许使用ftp</li></ul><h2 id="修改教程"><a href="#修改教程" class="headerlink" title="修改教程"></a>修改教程</h2><h3 id="修改vsftpd的配置文件"><a href="#修改vsftpd的配置文件" class="headerlink" title="修改vsftpd的配置文件"></a>修改vsftpd的配置文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1. 输入下面的指令打开配置文件</span><br><span class="line">vim /etc/vsftpd/vsftpd.conf</span><br><span class="line">2. 找到 local_root 将他修改为</span><br><span class="line">local_root=/</span><br></pre></td></tr></table></figure><p><img src="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311072213299.png" alt="image-20231107221353196"></p><h3 id="修改vsftpd的默认禁止文件"><a href="#修改vsftpd的默认禁止文件" class="headerlink" title="修改vsftpd的默认禁止文件"></a>修改vsftpd的默认禁止文件</h3><p>试一下，下面两个指令</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/selinux/config</span><br><span class="line">vim /etc/syscofnig/selinux</span><br></pre></td></tr></table></figure><p>笔者这里是第一个指令</p><p>然后打开这个页面</p><p><img src="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311072216296.png" alt="image-20231107221616260"></p><p>将这里的SELINUX改成 disabled</p><p>保存退出 </p><h3 id="修改设置文件脚本"><a href="#修改设置文件脚本" class="headerlink" title="修改设置文件脚本"></a>修改设置文件脚本</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/vsftpd/user_list</span><br><span class="line">vim /etc/vsftpd/user_list</span><br></pre></td></tr></table></figure><p>把这个两个文件的的root 都<strong>注释一下</strong></p><p><img src="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311072218565.png" alt="image-20231107221853537"></p><p><img src="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311072223219.png"></p><p>然后输入 <code>sudo systemctl restart vsftpd</code> 就好了</p><p>如果不行直接<code>reboot</code> 重启</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 操作系统 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 疑难解惑 </tag>
+            
+            <tag> linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>linux</title>
       <link href="/2023/11/06/linux/"/>
       <url>/2023/11/06/linux/</url>
@@ -128,9 +155,9 @@
       
         <tags>
             
-            <tag> Netty </tag>
-            
             <tag> Java </tag>
+            
+            <tag> Netty </tag>
             
         </tags>
       
