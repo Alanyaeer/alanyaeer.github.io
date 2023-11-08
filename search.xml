@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>docker的nginx配置</title>
+      <link href="/2023/11/08/docker%E7%9A%84nginx%E9%85%8D%E7%BD%AE/"/>
+      <url>/2023/11/08/docker%E7%9A%84nginx%E9%85%8D%E7%BD%AE/</url>
+      
+        <content type="html"><![CDATA[<h1 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">docker pull nginx</span><br><span class="line"></span><br><span class="line">docker run --name nginx -p 80:80 -d nginx</span><br><span class="line"></span><br><span class="line"><span class="built_in">mkdir</span> -p /docker/nginx/conf.d</span><br><span class="line"><span class="built_in">mkdir</span> -p /docker/nginx/html</span><br><span class="line"><span class="built_in">mkdir</span> -p /docker/nginx/logs</span><br><span class="line"><span class="built_in">mkdir</span> -p /docker/nginx/conf</span><br><span class="line"></span><br><span class="line">// 这里文件可以直接原名， 但是 文件必须是上一级目录 </span><br><span class="line">docker <span class="built_in">cp</span> nginx:/etc/nginx/nginx.conf /docker/nginx/conf/nginx.conf</span><br><span class="line">docker <span class="built_in">cp</span> nginx:/etc/nginx /docker/nginx/conf.d</span><br><span class="line">docker <span class="built_in">cp</span> nginx:/usr/share/nginx/html /docker/nginx</span><br><span class="line"></span><br><span class="line">docker stop nginx</span><br><span class="line">docker <span class="built_in">rm</span> nginx</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">// 需要注意这里的docker 和 宿主机 是相互对应的 </span><br><span class="line"></span><br><span class="line">docker run  -p 80:80 --name nginx --restart=always -v /docker/nginx/conf/nginx.conf:/etc/nginx/nginx.conf  -v /docker/nginx/conf.d:/etc/nginx/conf.d  -v /docker/nginx/html:/usr/share/nginx/html  -v /docker/nginx/logs:/var/log/nginx  -d  nginx</span><br><span class="line"></span><br><span class="line">要修改配置文件 /docker/conf.d/conf.d/default.conf</span><br><span class="line">如果vue 使用了 <span class="built_in">history</span>模式， 那么需要在location/ 写入下面这句话</span><br><span class="line">try_files <span class="variable">$uri</span> <span class="variable">$uri</span>/ /index.html;</span><br></pre></td></tr></table></figure><blockquote><p>最后将你自己的index.html放入到 &#x2F;docker&#x2F;nginx下面，然后输入你的ip地址就可以看到了</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前后端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> docker </tag>
+            
+            <tag> nginx </tag>
+            
+            <tag> linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>linux-ftp设置</title>
       <link href="/2023/11/07/linux-ftp%E8%AE%BE%E7%BD%AE/"/>
       <url>/2023/11/07/linux-ftp%E8%AE%BE%E7%BD%AE/</url>
@@ -20,9 +49,9 @@
       
         <tags>
             
-            <tag> linux </tag>
-            
             <tag> 疑难解惑 </tag>
+            
+            <tag> linux </tag>
             
         </tags>
       
@@ -155,9 +184,9 @@
       
         <tags>
             
-            <tag> Netty </tag>
-            
             <tag> Java </tag>
+            
+            <tag> Netty </tag>
             
         </tags>
       
