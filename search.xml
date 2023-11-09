@@ -20,11 +20,11 @@
       
         <tags>
             
+            <tag> linux </tag>
+            
             <tag> docker </tag>
             
             <tag> nginx </tag>
-            
-            <tag> linux </tag>
             
         </tags>
       
@@ -184,9 +184,9 @@
       
         <tags>
             
-            <tag> Netty </tag>
-            
             <tag> Java </tag>
+            
+            <tag> Netty </tag>
             
         </tags>
       
