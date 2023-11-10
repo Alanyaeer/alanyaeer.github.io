@@ -8,7 +8,7 @@
       <link href="/2023/11/10/jakarta-websocket-DeploymentException%E6%8A%A5%E9%94%99/"/>
       <url>/2023/11/10/jakarta-websocket-DeploymentException%E6%8A%A5%E9%94%99/</url>
       
-        <content type="html"><![CDATA[<h1 id="项目迁移记录"><a href="#项目迁移记录" class="headerlink" title="项目迁移记录"></a>项目迁移记录</h1><h2 id="websocket"><a href="#websocket" class="headerlink" title="websocket"></a>websocket</h2><h3 id="错误原因"><a href="#错误原因" class="headerlink" title="错误原因"></a>错误原因</h3><blockquote><p>在我升级项目为 springboot3 之后， 就出现了 : <code>org.springframework.web.socket.server.standard.ServerEndpointExporter: Factory method \&#39;serverEndpointExporter\&#39; threw exception with message: jakarta/websocket/DeploymentException</code></p></blockquote><ul><li>奇怪的是我之前在springboot2 是没有这个问题的🤕</li></ul><p>所以我就猜测是不是跟websocket 有关的 依赖是不是版本太低了 </p><h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><blockquote><p> 将所有 WebsocketServer（反正就是websocket 业务的地方） 中 导入包为 javax.xxx 都修改为 jakarta.xxx。这是因为 springboot3 的升级, 对了， 其实 所有的javax.servlet 也要换成jakarta.servlet（可以注意看看你controller层有没有遇到这个问题）</p></blockquote><h4 id="引入依赖"><a href="#引入依赖" class="headerlink" title="引入依赖"></a>引入依赖</h4><ul><li>首先引入正确的依赖 jar 包</li></ul><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.tomcat.embed<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>tomcat-embed-websocket<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>10.1.15<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><h4 id="修改导入的包名称"><a href="#修改导入的包名称" class="headerlink" title="修改导入的包名称"></a>修改导入的包名称</h4><p>将 javax注释了</p><p><img src="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311102352024.png" alt="image-20231110235233478"></p><p>换成下面三位兄弟</p><p><img src="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311102353763.png" alt="image-20231110235315740"></p><p>然后就可以正常运行了</p><h2 id="Mybatisplus"><a href="#Mybatisplus" class="headerlink" title="Mybatisplus"></a>Mybatisplus</h2><h3 id="错误原因-1"><a href="#错误原因-1" class="headerlink" title="错误原因"></a>错误原因</h3><blockquote><p>我的所有服务， 全部都报错说， no type of bean。</p></blockquote>]]></content>
+        <content type="html"><![CDATA[<h1 id="项目升级记录"><a href="#项目升级记录" class="headerlink" title="项目升级记录"></a>项目升级记录</h1><h2 id="Websocket"><a href="#Websocket" class="headerlink" title="Websocket"></a>Websocket</h2><h3 id="错误原因"><a href="#错误原因" class="headerlink" title="错误原因"></a>错误原因</h3><blockquote><p>在我升级项目为 springboot3 之后， 就出现了 : <code>org.springframework.web.socket.server.standard.ServerEndpointExporter: Factory method \&#39;serverEndpointExporter\&#39; threw exception with message: jakarta/websocket/DeploymentException</code></p></blockquote><ul><li>奇怪的是我之前在springboot2 是没有这个问题的🤕</li></ul><p>所以我就猜测是不是跟websocket 有关的 依赖是不是版本太低了 </p><h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><blockquote><p> 将所有 WebsocketServer（反正就是websocket 业务的地方） 中 导入包为 javax.xxx 都修改为 jakarta.xxx。这是因为 springboot3 的升级, 对了， 其实 所有的javax.servlet 也要换成jakarta.servlet（可以注意看看你controller层有没有遇到这个问题）</p></blockquote><h4 id="引入依赖"><a href="#引入依赖" class="headerlink" title="引入依赖"></a>引入依赖</h4><ul><li>首先引入正确的依赖 jar 包</li></ul><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.tomcat.embed<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>tomcat-embed-websocket<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>10.1.15<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><h4 id="修改导入的包名称"><a href="#修改导入的包名称" class="headerlink" title="修改导入的包名称"></a>修改导入的包名称</h4><p>将 javax注释了</p><p><img src="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311102352024.png" alt="image-20231110235233478"></p><p>换成下面三位兄弟</p><p><img src="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311102353763.png" alt="image-20231110235315740"></p><p>然后就可以正常运行了</p><h2 id="Mybatisplus"><a href="#Mybatisplus" class="headerlink" title="Mybatisplus"></a>Mybatisplus</h2><h3 id="错误原因-1"><a href="#错误原因-1" class="headerlink" title="错误原因"></a>错误原因</h3><blockquote><p> java.lang.IllegalArgumentException: Property ‘sqlSessionFactory’ or ‘sqlSessionTemplate’ are required  </p><p> Error creating bean with name ‘commonController’: Unsatisfied dependency expressed through field ‘messageService’: Error creating bean with name ‘messageServiceImpl’: Unsatisfied dependency expressed through field ‘baseMapper’: Error creating bean with name ‘messageMapper’ defined in file </p></blockquote><p>大概就是这些问题 但是之前是没有的 。 尝试了 网上 给 启动类加上 MapperScanner也无济于事， 实际上就是版本问题</p><h3 id="解决方案-1"><a href="#解决方案-1" class="headerlink" title="解决方案"></a>解决方案</h3><h4 id="引入依赖-1"><a href="#引入依赖-1" class="headerlink" title="引入依赖"></a>引入依赖</h4><p>这是我原本的依赖</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.baomidou<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mybatis-plus-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.4.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure><p>把这个 version 版本换成 <strong>3.5.3.1</strong></p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.baomidou<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mybatis-plus-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.5.3.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure><p>运行发现 解决问题</p>]]></content>
       
       
       <categories>
@@ -20,9 +20,9 @@
       
         <tags>
             
-            <tag> websocket </tag>
-            
             <tag> 疑难解惑 </tag>
+            
+            <tag> websocket </tag>
             
         </tags>
       
@@ -76,9 +76,9 @@
       
         <tags>
             
-            <tag> linux </tag>
-            
             <tag> 疑难解惑 </tag>
+            
+            <tag> linux </tag>
             
         </tags>
       
@@ -184,9 +184,9 @@
       
         <tags>
             
-            <tag> websocket </tag>
-            
             <tag> 疑难解惑 </tag>
+            
+            <tag> websocket </tag>
             
         </tags>
       
@@ -292,9 +292,9 @@
       
         <tags>
             
-            <tag> nginx </tag>
-            
             <tag> 疑难解惑 </tag>
+            
+            <tag> nginx </tag>
             
         </tags>
       
