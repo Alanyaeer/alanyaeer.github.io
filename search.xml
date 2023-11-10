@@ -4,6 +4,46 @@
   
     
     <entry>
+      <title>打jar报错问题</title>
+      <link href="/2023/11/11/%E6%89%93jar%E6%8A%A5%E9%94%99%E9%97%AE%E9%A2%98/"/>
+      <url>/2023/11/11/%E6%89%93jar%E6%8A%A5%E9%94%99%E9%97%AE%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>idea打jar包失败</title>
+      <link href="/2023/11/11/idea%E6%89%93jar%E5%8C%85%E5%A4%B1%E8%B4%A5/"/>
+      <url>/2023/11/11/idea%E6%89%93jar%E5%8C%85%E5%A4%B1%E8%B4%A5/</url>
+      
+        <content type="html"><![CDATA[<h1 id="问题汇总"><a href="#问题汇总" class="headerlink" title="问题汇总"></a>问题汇总</h1><h2 id="META—INF-以及-找不到主类"><a href="#META—INF-以及-找不到主类" class="headerlink" title="META—INF 以及 找不到主类"></a>META—INF 以及 找不到主类</h2><h3 id="问题引入"><a href="#问题引入" class="headerlink" title="问题引入"></a>问题引入</h3><blockquote><p>如果你打开META-INF 发现你主类就是对的，或者你发现的你的 jar包打出异常的小</p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311110012758.png" alt="image-20231111001245714"></p><p>说实话我一个springboot 项目各种依赖加起来绝对不止那么小</p><p>你可以新建立一个springboot 项目（没错新建立一个） ，然后打jar ，如果出现了上面的问题 。 可以继续往下看了</p><p>那么推测 是你的<strong>springboot 版本太低</strong>了 。 如何修改你的springboot 版本。</p><h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><p>新建立一个项目 ， 然后把 点击打红圈 哪里的一个设置按钮</p><p><img src="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311110014789.png" alt="image-20231111001427737"></p><p><strong>修改为</strong></p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://start.spring.io</span><br></pre></td></tr></table></figure><ul><li><p>然后重新建立一个项目， 把你原本项目迁移过去就好了</p></li><li><p>如果你在升级springboot3 时遇到了 一些依赖问题 参考我<a href="https://www.alanyaeer.fun/2023/11/10/jakarta-websocket-DeploymentException%E6%8A%A5%E9%94%99/">项目升级遇到的各种bug</a></p></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前后端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 疑难解惑 </tag>
+            
+            <tag> jar包 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>springboot2项目迁移到springboot3出现的各种问题</title>
       <link href="/2023/11/10/jakarta-websocket-DeploymentException%E6%8A%A5%E9%94%99/"/>
       <url>/2023/11/10/jakarta-websocket-DeploymentException%E6%8A%A5%E9%94%99/</url>
@@ -211,9 +251,9 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> Netty </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
