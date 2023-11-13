@@ -1,33 +1,14 @@
-@import "//at.alicdn.com/t/c/font_4310562_upfi60u88s.css";
+/* @import "//at.alicdn.com/t/c/font_4310562_upfi60u88s.css"; */
 [data-theme="light"] #web_bg {
-  background-image: url("../img/background.png"),
+  background-image: url(https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311131836414.webp),
   linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35))
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 [data-theme="dark"] #web_bg {
-  background-image: url("../img/background1.png"),
+  background-image: url(https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311131836364.webp),
   linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35))
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-/* #web_bg {
-  background-image: url("../img/background.png"), 
-  linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), 
-} */
-/* 主页所有文章页面背景 */
-/* #aside-content>.card-widget {
-  background: linear-gradient(-45deg,
-          #e8d8b9,
-          #eccec5,
-          #a3e9eb,
-          #bdbdf0,
-          #eec1ea);
-  box-shadow: 0 0 5px rgb(66, 68, 68);
-  position: relative;
-  background-size: 400% 400%;
-  -webkit-animation: Gradient 10s ease infinite;
-  -moz-animation: Gradient 10s ease infinite;
-  animation: Gradient 10s ease infinite !important;
-} */
 
 @-webkit-keyframes Gradient {
   0% {
