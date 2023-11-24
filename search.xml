@@ -4,31 +4,6 @@
   
     
     <entry>
-      <title>计算机网络</title>
-      <link href="/2023/11/19/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-      <url>/2023/11/19/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</url>
-      
-        <content type="html"><![CDATA[<h1 id="应用层"><a href="#应用层" class="headerlink" title="应用层"></a>应用层</h1><h1 id="传输层"><a href="#传输层" class="headerlink" title="传输层"></a>传输层</h1><h1 id="网络层"><a href="#网络层" class="headerlink" title="网络层"></a>网络层</h1><ul><li><p>什么叫做网络层</p><blockquote><p>需要进行路由选择或者地址转换， 才会利用到网络层， 比如局域网就不需要使用网络层</p></blockquote></li><li><p>LAN MAN WAN 的区别</p></li></ul><p>​<a href="https://zhuanlan.zhihu.com/p/421821214">LAN&#x2F;WAN&#x2F;MAN是什么？有什么区别？ - 知乎 (zhihu.com)</a></p><ul><li>vpn</li></ul><p>​虚拟专用网络</p><ul><li><p>要使得数据在网络中的传输延时最小， 应该选择的交换方式为 线路交换（或者说是电路交换） </p><p>[电路交换、报文交换、分组交换三种数据交换方式的特点、优点、应用场景以及技术对比分析_三种数据交换技术的特点-CSDN博客](<a href="https://blog.csdn.net/kai_locust/article/details/108301553#:~:text=%E7%94%B5%E8%B7%AF%E4%BA%A4%E6%8D%A2%E4%B8%8E%E5%AD%98%E5%82%A8%E4%BA%A4%E6%8D%A2">https://blog.csdn.net/kai_locust/article/details/108301553#:~:text=电路交换与存储交换</a> ： 1、存储交换中多个分组可以共享信道，线路利用率高，而电路交换使用的是专用电路，利用率低。 2、存储交换具有差错校验，可靠性高。 3、存储交换可以动态选择路由，确定最佳路径。,报文交换与分组交换 ： 1、分组交换的颗粒度比报文交换更小，将报文拆分成了组。 2、报文交换中的同一报文经过统一的路径到达目的交换机；分组交换中报文拆分成分组，各个分组可能经过不同的路径到达终点。 3、分组交换相对于报文交换多了拆分和重组的开销。)</p></li><li><p>子网掩码和 ip地址</p></li></ul><p><img src="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311192132393.png" alt="image-20231119213212304"></p><blockquote><p>需要注意这里 全0的， 要作为网络地址， 全1的要作为广播地址</p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311192136696.png" alt="image-20231119213613602"></p><ul><li>TCP&#x2F;IP 中 ip提供了为主机之间提供了无连接的服务</li></ul><p><a href="https://blog.csdn.net/qq_48759664/article/details/108551050#:~:text=%E6%98%AF%E6%8C%87%E9%80%9A%E4%BF%A1%E5%8F%8C%E6%96%B9%E4%B8%8D%E9%9C%80%E8%A6%81%E4%BA%8B%E5%85%88%E5%BB%BA%E7%AB%8B%E4%B8%80%E6%9D%A1%E9%80%9A%E4%BF%A1%E7%BA%BF%E8%B7%AF%EF%BC%8C%E4%BA%8C%E6%98%AF%E6%8A%8A%E6%AF%8F%E4%B8%AA%E5%B8%A6%E6%9C%89%E7%9B%AE%E7%9A%84%E5%9C%B0%E5%9D%80%E7%9A%84%E5%8C%85%EF%BC%88%E6%8A%A5%E6%96%87%E5%88%86%E7%BB%84%EF%BC%89%E9%80%81%E5%88%B0%E7%BA%BF%E8%B7%AF%E4%B8%8A%EF%BC%8C%E7%94%B1%E7%B3%BB%E7%BB%9F%E8%87%AA%E4%B8%BB%E9%80%89%E5%AE%9A%E8%B7%AF%E7%BA%BF%E8%BF%9B%E8%A1%8C%E4%BC%A0%E8%BE%93%E3%80%82,IP%E6%98%AF%E9%9D%A2%E5%90%91%E6%97%A0%E8%BF%9E%E6%8E%A5%E7%9A%84%E3%80%82">为什么说ip协议是无连接协议_ip是无连接的-CSDN博客</a></p><h1 id="网络接口层"><a href="#网络接口层" class="headerlink" title="网络接口层"></a>网络接口层</h1><p><img src="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311192136696.png" alt="image-20231119213613602"></p><h1 id="杂项"><a href="#杂项" class="headerlink" title="杂项"></a>杂项</h1><h2 id="OSI模型中数据单元的叫法"><a href="#OSI模型中数据单元的叫法" class="headerlink" title="OSI模型中数据单元的叫法"></a>OSI模型中数据单元的叫法</h2><p>[osi模型中各层数据单元的名称_计算机网络各层的数据单元_Wisky_sour的博客-CSDN博客](<a href="https://blog.csdn.net/Wisky_sour/article/details/125312726#:~:text=OSI%E6%A8%A1%E5%9E%8B%E6%AF%8F%E5%B1%82%E7%9A%84%E6%95%B0%E6%8D%AE%E5%8D%95%E5%85%83%E5%90%8D%E7%A7%B0">https://blog.csdn.net/Wisky_sour/article/details/125312726#:~:text=OSI模型每层的数据单元名称</a> 第一层：物理层；二进制比特流传输；bit（比特流）；,第二层：数据链路层；介质访问控制；frame（帧）； 第三层：网络层；确定地址和路由选择；packet（包），又叫做分组 第四层：传输层；端到端连接；也叫作数据包。)</p><pre class="mermaid">flowchart TBid1[物理层 / 比特流] ---> id2[数据链路层 / 帧]id2--->id3[网络层 / 包]id3--->id4[传输层 / 如果是tcp就是数据段否则是数据报]</pre><h2 id="多路复用"><a href="#多路复用" class="headerlink" title="多路复用"></a>多路复用</h2><blockquote><p> TDM\ FDM \ WDM</p></blockquote><h2 id="主机名-域名-ip地址-url"><a href="#主机名-域名-ip地址-url" class="headerlink" title="主机名 域名 ip地址 url"></a>主机名 域名 ip地址 url</h2><p><a href="https://blog.csdn.net/weixin_45437521/article/details/109037537">【精选】计算机网络之域名、主机名、IP地址和URL_url主机名-CSDN博客</a></p><p>什么是ARP ?</p><p>什么是规范主机名， 主机别名</p><p>什么是 dns</p><p><img src="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311232342887.webp" alt="image-20231123234204780"></p><p><img src="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311232343545.webp" alt="image-20231123234339471"></p><p><img src="https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311232344408.webp" alt="image-20231123234410216"></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 四大件基础 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 计算机网络 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>elasticsearch学习</title>
       <link href="/2023/11/18/elasticsearch%E5%AD%A6%E4%B9%A0/"/>
       <url>/2023/11/18/elasticsearch%E5%AD%A6%E4%B9%A0/</url>
@@ -581,9 +556,9 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 疑难解惑 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
