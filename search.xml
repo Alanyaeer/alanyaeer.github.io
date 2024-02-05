@@ -330,9 +330,9 @@
             
             <tag> springcloud </tag>
             
-            <tag> redis </tag>
-            
             <tag> minio </tag>
+            
+            <tag> redis </tag>
             
         </tags>
       
