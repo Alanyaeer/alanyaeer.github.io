@@ -1,11 +1,11 @@
 /* @import "//at.alicdn.com/t/c/font_4310562_upfi60u88s.css"; */
 [data-theme="light"] #web_bg {
-  background-image: '../img/background.webp',
+  background-image: url('../img/background.webp'),
   linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35))
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 [data-theme="dark"] #web_bg {
-  background-image: '../img/background1.webp',
+  background-image: url('../img/background1.webp'),
   linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35))
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
