@@ -1,11 +1,11 @@
 /* @import "//at.alicdn.com/t/c/font_4310562_upfi60u88s.css"; */
 [data-theme="light"] #web_bg {
-  background-image: url(http://118.25.143.28:9000/oj-question-file/background.webp),
+  background-image: url(https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311131836414.webp),
   linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35))
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 [data-theme="dark"] #web_bg {
-  background-image: url(http://118.25.143.28:9000/oj-question-file/background1.webp),
+  background-image: url(https://cdn.jsdelivr.net/gh/Alanyaeer/ImgSummary@master/img/202311131836364.webp),
   linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35))
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
